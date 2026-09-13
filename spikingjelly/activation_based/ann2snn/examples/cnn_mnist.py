@@ -96,6 +96,7 @@ def conversion_job(head, train_data_loader):
     # model_converter = ann2snn.Converter(mode='99.9%', dataloader=train_data_loader)
     # model_converter = ann2snn.Converter(mode=1.0 / 2, dataloader=train_data_loader)
     model_converter = ann2snn.Converter(mode=1.0 / 4, dataloader=train_data_loader)
+    # model_converter = ann2snn.Converter(mode=1.0 / 6, dataloader=train_data_loader)
     return model_converter(head)
 
 def val(net, device, train_data_loader, test_data_loader, T=None):

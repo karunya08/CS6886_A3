@@ -36,7 +36,7 @@ def main(eval_fn,
     torch.random.manual_seed(global_seed)
     torch.cuda.manual_seed(global_seed)
     device = device # use 'cpu' if CUDA not available
-    dataset_dir = dataset_dir if dataset_dir is not None else 'spikingjelly/datasets/mnist' # folder to download dataset
+    dataset_dir = dataset_dir if dataset_dir is not None else './datasets/mnist' # folder to download dataset
     
 
     T = hyperparameters.T
